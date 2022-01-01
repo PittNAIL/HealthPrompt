@@ -1,0 +1,2 @@
+# HealthPrompt
+Prompt Learning is a new paradigm in Natural Language Processing(NLP), which uses pre-trained language models to perform downstream tasks, avoiding fine tuning of a model. This zero-shot learning approach can be applied to healthcare applications, where there is limited availability of data. This projects aims to design prompt methodologies for downstream applications using PLMs, without the need for model training. This approach can change "Deep Learning" to "Deep Thinking" in Healthcare sector.
