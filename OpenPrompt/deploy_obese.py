@@ -36,9 +36,8 @@ import torch
 
 def prompt_classification(text):
     classes = [ 
-        "lung",
-        "brain",
-        "virus"
+        "Obesity",
+        "not Obese"
     ]
 
 
@@ -75,9 +74,10 @@ def prompt_classification(text):
     # template_text = '{"placeholder":"text_a"}: This effects {"mask"}'
     template_text= 'A {"mask"} disorder :  {"placeholder": "text_a"}'
 
-    promptTemplate = ManualTemplate(
-        text = template_text,
-        tokenizer = tokenizer,
+    promptTemplate = PtuningTemplate(model = plm, 
+                                     tokenizer = tokenizer, 
+                                     text = template_text, 
+                                     prompt_encoder_type = 'mlm'
     )
 
     promptVerbalizer = ManualVerbalizer(
@@ -119,12 +119,12 @@ def prompt_classification(text):
 
 if __name__ == "__main__":
     
-    st.title("HealthPrompt: Classifying clinical texts")
+    st.title("HealthPrompt: Classifying clinical texts - Obesity")
     st.write("Upload Clinical text, Classify it..")
 
     @st.cache(allow_output_mutation=True)
     def load_plm_fn():
-        plm, tokenizer, model_config, WrapperClass = load_plm("bert", "bert-base-uncased")
+        plm, tokenizer, model_config, WrapperClass = load_plm("bert", "emilyalsentzer/Bio_ClinicalBERT")
         return plm, tokenizer, model_config, WrapperClass
     
     with st.spinner("Loading PLM into memory..."):
@@ -138,8 +138,4 @@ if __name__ == "__main__":
             res=prompt_classification(text)
             st.write("Class : {} - disease".format(res))
         st.write("")
-            
-    
-
-
             
