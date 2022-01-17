@@ -12,11 +12,19 @@ o I have seen papers describing that prompt can be used for NLU, NLP and other N
 
 Week 4 (Jan 10, 2022 Ð Jan 16, 2022):
 
-o Try with Smoking Dataset
-o Try 3 BERT Model
-o Try weighted score for large text corpus
+o worked on Smoking Dataset - Classification accuracy was 56% Note-there are less than 150 text records in Smoking dataset
+o created overall system architecture
+o Created a Input custom dataset module
+o Created text cleaning module
+o created a text splitting module
+o created weighted score function for large text corpus, but it is too slow. We have to decide between accuracy and robustness - testing is pending
+
+Week 5 (Jan 17, 2022 Ð Jan 23, 2022) WIP:
+
 o Solve negation issue
 o Read both papers and solve the template issue
 o Make autoprompt working
 o Create a package out of this(can be pushed to next week)
+
+
 
