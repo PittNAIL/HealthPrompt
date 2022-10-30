@@ -27,8 +27,6 @@ from openprompt.data_utils import InputExample
 from transformers import AutoTokenizer, AutoModel
 from openprompt.plms import load_plm
 from openprompt.prompts import ManualTemplate
-from openprompt.prompts import PtuningTemplate
-from openprompt.prompts import ManualVerbalizer
 from openprompt import PromptForClassification
 from openprompt import PromptDataLoader
 import torch
