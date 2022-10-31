@@ -5,7 +5,7 @@ Prompt Learning is a new paradigm in Natural Language Processing(NLP), which use
 
 <div align="center">
 
-<img src="assets/architecture.png" width="85%" align="center"/>
+<img src="assets/architecture.png" width="50%" align="center"/>
 
 </div>
 
