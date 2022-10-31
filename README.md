@@ -5,21 +5,10 @@ Prompt Learning is a new paradigm in Natural Language Processing(NLP), which use
 
 <div align="center">
 
-<img src="assets/architecture.png" width="85%" align="center"/>
+<img src="assets/architecture.png" width="50%" align="center"/>
 
 </div>
 
-## Citation
-Please cite our paper
-
-```bibtex
-@article{sivarajkumar2022healthprompt,
-  title={HealthPrompt: A Zero-shot Learning Paradigm for Clinical Natural Language Processing},
-  author={Sivarajkumar, Sonish and Wang, Yanshan},
-  journal={arXiv preprint arXiv:2203.05061},
-  year={2022}
-}
-```
 ## Development
 
 [`HealthPrompt`][HealthPrompt] is developed by [Sonish Sivarajkumar][sonish] and [Dr.
@@ -32,3 +21,15 @@ Yanshan Wang][drwang].
 [sonish]: https://sonishsivarajkumar.github.io/homepage/
 [drwang]: https://sites.pitt.edu/~yaw89/
 [HealthPrompt]: https://github.com/PittNAIL/HealthPrompt
+
+## Citation
+Please cite our paper
+
+```bibtex
+@article{sivarajkumar2022healthprompt,
+  title={HealthPrompt: A Zero-shot Learning Paradigm for Clinical Natural Language Processing},
+  author={Sivarajkumar, Sonish and Wang, Yanshan},
+  journal={arXiv preprint arXiv:2203.05061},
+  year={2022}
+}
+```
